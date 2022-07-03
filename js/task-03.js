@@ -14,12 +14,11 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-images.forEach(image => { 
-  gallery.insertAdjacentHTML('afterbegin', '<li><img class = item ></li>');
-  const imgEL = document.querySelector('.item');
-  imgEL.alt = image.alt;
-  imgEL.src = image.url;
-  imgEL.style.borderRadius = '10px';
-  imgEL.style.marginBottom = '10px';
-  imgEL.width = 360;
-})
+images.forEach(image => {
+  gallery.insertAdjacentHTML('afterbegin', `<li><img class = item 
+  alt=${image.alt}; 
+  src=${image.url};
+  width = 420;
+  style = "border-radius: 10px; margin-bottom: 20px"
+  ></li>`);
+});
